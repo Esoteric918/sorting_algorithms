@@ -14,19 +14,18 @@
  */
 typedef struct listint_s
 {
-    const int n;
-    struct listint_s *prev;
-    struct listint_s *next;
+	const int n;
+	struct listint_s *prev;
+	struct listint_s *next;
 } listint_t;
-/**
- * print funcitons in main files 
- */
+
 void print_array(const int *array, size_t size);
 void print_list(const listint_t *list);
 void bubble_sort(int *array, size_t size);
 void insertion_sort_list(listint_t **list);
 void selection_sort(int *array, size_t size);
 void quick_sort(int *array, size_t size);
+ssize_t _partition(int *arr, ssize_t f, ssize_t l, size_t size);
+void _qsort(int *arr, ssize_t f, ssize_t l, size_t size);
 
 #endif /* SORT_H */
-  
