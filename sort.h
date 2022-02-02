@@ -27,5 +27,6 @@ void selection_sort(int *array, size_t size);
 void quick_sort(int *array, size_t size);
 ssize_t _partition(int *arr, ssize_t f, ssize_t l, size_t size);
 void _qsort(int *arr, ssize_t f, ssize_t l, size_t size);
+void merge_sort(int *array, size_t size);
 
 #endif /* SORT_H */
