@@ -28,5 +28,9 @@ void quick_sort(int *array, size_t size);
 ssize_t _partition(int *arr, ssize_t f, ssize_t l, size_t size);
 void _qsort(int *arr, ssize_t f, ssize_t l, size_t size);
 void merge_sort(int *array, size_t size);
+void tp_dn_mrg_srt(int *arr, int *out_arr, size_t size);
+void tp_dn_split_mrg(int *out_arr, size_t strt, size_t end, int *arr);
+void tp_dn_mrg(int *arr, size_t strt, size_t mid, size_t end, int *out_arr);
+void copy_array(int *arr, size_t strt, size_t end, int *out_arr);
 
 #endif /* SORT_H */
