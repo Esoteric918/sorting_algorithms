@@ -32,5 +32,10 @@ void top_dwn_mrg_srt(int *arr, int *out_arr, size_t size);
 void top_dwn_split_mrg(int *out_arr, size_t strt, size_t end, int *arr);
 void top_dwn_mrg(int *arr, size_t strt, size_t mid, size_t end, int *out_arr);
 void copy_array(int *arr, size_t strt, size_t end, int *out_arr);
+void merge_up(int *arr, int n);
+void merge_down(int *arr, int n);
+void heap_sort(int *array, size_t size);
+void sift_down(int *arr, size_t strt, size_t end, size_t size);
+void heapify(int *arr, size_t size);
 
 #endif /* SORT_H */
