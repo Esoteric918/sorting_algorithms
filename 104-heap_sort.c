@@ -1,5 +1,11 @@
 #include "sort.h"
 
+/**
+ * heapify - creates a heap
+ *
+ * @arr: array turn to heap
+ * @size: size of array
+ */
 
 void heapify(int *arr, size_t size)
 {
@@ -49,7 +55,7 @@ void sift_down(int *arr, size_t strt, size_t end, size_t size)
 	}
 }
 /**
- * heap_sort
+ * heap_sort - sorts an array
  *
  * @array: array to be sorted
  * @size: size of the array

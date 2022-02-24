@@ -1,3 +1,3 @@
-O(nlgn)
-O(nlgn)
-O(n)
+O(nlog(n))
+O(nlog(n))
+O(nlog(n))
