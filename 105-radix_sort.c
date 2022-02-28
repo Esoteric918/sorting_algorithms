@@ -37,7 +37,7 @@ void countingSort(int *array, size_t size, int *buff, int lsd)
 	for (idx = 1; idx < 10; idx++)
 		 arrCount[idx] += arrCount[idx - 1];
 
-	for (idx = size - 1; (int)idx <= 0; idx--)
+	for (idx = size - 1; (int)idx >= 0; idx--)
 	{
 		buff[arrCount[(array[idx] / lsd) % 10] - 1] = array[idx];
 		arrCount[(array[idx] / lsd) % 10]--;
@@ -75,4 +75,3 @@ void radix_sort(int *array, size_t size)
 	}
 	free(temp);
 }
-
