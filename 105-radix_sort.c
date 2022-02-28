@@ -3,7 +3,7 @@
 /**
  * getMax - Function to get the largest element from an array
  * @arr: array
- * @n: n'th position in the array
+ * @n: size of array
  *
  * Returns: int
  */
@@ -63,7 +63,7 @@ void radix_sort(int *array, size_t size)
 	int max = getMax(array, size);
 	int *temp = malloc(sizeof(int) * size);
 
-	if (!array || size < 2 || !temp)
+	if (array == NULL || size < 2 || temp ==NULL)
 	{
 		free(temp);
 		return;
