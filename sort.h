@@ -37,5 +37,8 @@ void merge_down(int *arr, int n);
 void heap_sort(int *array, size_t size);
 void sift_down(int *arr, size_t strt, size_t end, size_t size);
 void heapify(int *arr, size_t size);
+void radix_sort(int *array, size_t size);
+void countingSort(int *array, size_t size, int *buff, int lsd);
+
 
 #endif /* SORT_H */
