@@ -66,20 +66,21 @@ void countingSort(int *array, size_t size, int *buff, int lsd)
 
 void radix_sort(int *array, size_t size)
 {
-	int lsd;
-	int max = getMax(array, size);
-	int *temp = malloc(sizeof(int) * size);
+	int max, *temp, lsd;
 
-	if (array == NULL || size < 2 || temp == NULL)
+	if (array == NULL || size < 2)
 	{
-		free(temp);
 		return;
 	}
+
+	temp = malloc(sizeof(int) * size);
+	if (temp == NULL)
+		return;
+	max = getMax(array, size);
 	for (lsd = 1; max / lsd > 0; lsd *= 10)
 	{
 		countingSort(array, size, temp, lsd);
 		print_array(array, size);
 	}
 	free(temp);
-	return;
 }
