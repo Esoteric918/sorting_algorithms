@@ -32,6 +32,10 @@ void countingSort(int *array, size_t size, int *buff, int lsd)
 	int arrCount[10] = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
 	size_t idx;
 
+	if (array == NULL || size < 2)
+	{
+		return;
+	}
 	for (idx = 0; idx < size; idx++)
 	{
 		arrCount[(array[idx] / lsd) % 10]++;
